@@ -55,6 +55,22 @@
 
     <!-- Script modo oscuro -->
     <script>
+        class Usuario {
+            constructor(nombre, contraseña, email) {
+                this.nombre = nombre;
+                this.contraseña = contraseña;
+                this.email = email
+            }
+
+            mostrarInfo() {
+                console.log("Usuario:", this.nombre);
+                console.log("Contraseña:", this.contraseña);
+                console.log("Email:", this.email);
+            }
+        }
+
+        const developer = new Usuario("Jimmy", "J4m3sM0rg4n", "s4u1_s3cr3t@proton.me");
+        
         const boton = document.getElementById("toggle-dark");
 
         // Cargar preferencia guardada
