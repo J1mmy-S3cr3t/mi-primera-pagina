@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Aleatoria</title>
+    <title>Página con Modo Oscuro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
         <h1>Mi Sitio Web</h1>
+        
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -18,12 +19,16 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
+
+        <!-- Botón modo oscuro -->
+        <button id="toggle-dark">🌙 Modo oscuro</button>
     </header>
 
     <main>
         <section id="hero">
-            <h2>Bienvenido</h2>
+            <h2 class="rainbow">Bienvenido</h2>
             <p>Esta es una sección destacada con contenido principal.</p>
+            <button class="btn-divertido">Haz clic</button>
         </section>
 
         <section id="contenido">
@@ -47,6 +52,27 @@
     <footer>
         <p>&copy; 2026 Mi Sitio Web</p>
     </footer>
+
+    <!-- Script modo oscuro -->
+    <script>
+        const boton = document.getElementById("toggle-dark");
+
+        // Cargar preferencia guardada
+        if (localStorage.getItem("modo") === "oscuro") {
+            document.body.classList.add("dark-mode");
+        }
+
+        // Evento click
+        boton.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("modo", "oscuro");
+            } else {
+                localStorage.setItem("modo", "claro");
+            }
+        });
+    </script>
 
 </body>
 </html>
