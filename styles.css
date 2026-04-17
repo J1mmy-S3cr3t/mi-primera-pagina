@@ -97,3 +97,36 @@ footer {
 h1, h2, h3 {
     text-shadow: 2px 2px #ffde59;
 }
+
+/* Modo oscuro base */
+.dark-mode {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+/* Header */
+.dark-mode header {
+    background: #1f1f1f;
+}
+
+/* Artículos */
+.dark-mode article {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+/* Aside */
+.dark-mode aside {
+    background: #2c2c2c;
+}
+
+/* Footer */
+.dark-mode footer {
+    background: #1a1a1a;
+}
+
+/* Botones */
+.dark-mode .btn-divertido {
+    background: linear-gradient(45deg, #333, #555);
+    color: white;
+}
