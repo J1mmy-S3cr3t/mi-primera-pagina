@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía general */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #ff6f61;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background: #ffb347;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+nav a:hover {
+    background: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Sección hero */
+#hero {
+    background: #6a11cb;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Contenido principal */
+#contenido {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    flex: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+article:hover {
+    transform: rotate(-1deg) scale(1.03);
+}
+
+/* Aside */
+aside {
+    background: #00c9a7;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    background: #845ec2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Efecto divertido */
+h1, h2, h3 {
+    text-shadow: 2px 2px #ffde59;
+}
